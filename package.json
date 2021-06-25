@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx @vercel/ncc build"
+    "build": "npx @vercel/ncc@0.28.6 build"
   },
   "keywords": [],
   "author": "Takafumi Ikeda",
