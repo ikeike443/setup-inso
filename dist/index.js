@@ -25,17 +25,21 @@ async function action() {
   // exec(``).toString;
 
   let insoDirectory = tc.find("insomnia-inso", "latest");
+  console.log(`insoDirectory: ${insoDirectory}`)
   if (!insoDirectory) {
     const versionUrl = `https://github.com/ikeike443/inso-pkg/releases/download/0.1/insomnia-inso.tar.gz`;
     const insoPath = await tc.downloadTool(versionUrl);
-
+    console.log(`insoPath: ${insoPath}`)
     const insoExtractedFolder = await tc.extractTar(
       insoPath,
       `inso`
     );
+    console.log(`insoExtractedFolder: ${insoExtractedFolder}`)
 
     insoDirectory = await tc.cacheDir(insoExtractedFolder, "inso", "latest");
+    console.log(`insoDirectory: ${insoDirectory}`)
   }
+  console.log(`insoDirectory: ${insoDirectory}`)
   
   core.addPath(insoDirectory);
 }
