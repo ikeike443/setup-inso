@@ -31,7 +31,7 @@ async function action() {
 
     const insoExtractedFolder = await tc.extractTar(
       insoPath,
-      `insmnia-inso`
+      `inso`
     );
 
     insoDirectory = await tc.cacheDir(insoExtractedFolder, "inso", "latest");
