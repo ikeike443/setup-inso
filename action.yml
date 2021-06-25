@@ -1,0 +1,9 @@
+name: Setup Inso
+description: Install inso from Kong
+runs:
+  using: node12
+  main: dist/index.js
+# inputs:
+#   inso-version:
+#     description: The version of inso to install
+#     required: true
