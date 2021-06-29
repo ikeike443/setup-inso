@@ -24,3 +24,9 @@ jobs:
           inso-version: 2.22.35
       - run: inso --help
 ```
+
+
+## NOTE
+For now, inso is re-packaged mannualy and uploaded [here](https://github.com/ikeike443/inso-pkg/releases/tag/2.2.35)
+
+How to build is described in: https://github.com/ikeike443/inso-pkg/blob/main/README.md
